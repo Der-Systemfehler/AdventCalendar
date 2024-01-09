@@ -1,0 +1,7 @@
+<div class="fact" (click)="showFact()">
+    <div *ngIf="hidden; then closed else opened" ></div>
+    <ng-template #closed>
+        <p class="fact--closed"> {{day}}  </p></ng-template>
+    <ng-template #opened>
+        <p class="fact--opened" [@openAnimation]> {{fact}} </p></ng-template>
+</div>

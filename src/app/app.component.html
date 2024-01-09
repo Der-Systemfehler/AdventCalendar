@@ -1,0 +1,3 @@
+<div class="calendar">
+    <app-door class="adventDoor" *ngFor="let fact of facts; index as i" [fact]=getFact(i) [day]=days[i] [canBeOpened]="dayOfMonth >= days[i]"></app-door>
+</div>
